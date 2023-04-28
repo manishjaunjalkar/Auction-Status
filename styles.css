@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap");
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+.heading{
+    background-color: black;
+    color: white;
+}
+#container{
+    display:flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.myDiv{
+    width: 400px;
+    height: 180px;
+    
+    border:2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+.myDiv > h1{
+    margin: 0;
+}
+.myDiv > h3{
+    margin: 5px;
+}
+#loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 50px;
+    height: 50px;
+    border:5px solid black ;
+    border-top: 5px solid blue;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.flex-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.chip{
+background-color: skyblue;
+border-radius: 5px;
+padding: 5px;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+
+.input{
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    margin:1rem auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid black;
+    min-width: 400px;
+    font-family: 'Inter';
+} 
